@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAP Ventures | Tech Designed to Connect, Not Deflect</title>
+<meta name="description" content="MAP Ventures builds web systems for Connecticut businesses that protect your data and put a real person one phone call away.">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: {
+            950: '#071528',
+            900: '#0B2545',
+            800: '#123A63',
+            700: '#1B4E80',
+            600: '#2563A3',
+          },
+          offwhite: '#F7F8FA',
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-white text-navy-900 antialiased">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- HEADER (identical on every page) -->
+<header class="bg-navy-900 text-white sticky top-0 z-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-2.5 font-bold text-xl tracking-tight">
+        <span class="h-10 w-10 shrink-0 overflow-hidden rounded-full">
+          <img src="logo.png" alt="MAP Ventures" class="h-full w-full object-cover">
+        </span>
+        <span>MAP</span><span class="font-normal text-white/70">Ventures</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-10 text-sm font-medium" aria-label="Primary">
+        <a href="index.html" data-nav="index.html" class="text-white/70 hover:text-[var(--gold)] transition-colors">Home</a>
+        <a href="index.html#services" class="text-white/70 hover:text-[var(--gold)] transition-colors">Services</a>
+        <a href="styles.html" data-nav="styles.html" class="text-white/70 hover:text-[var(--gold)] transition-colors">Styles</a>
+        <a href="index.html#community" class="text-white/70 hover:text-[var(--gold)] transition-colors">About</a>
+        <a href="contact.html" data-nav="contact.html" class="text-white/70 hover:text-[var(--gold)] transition-colors">Free Quote</a>
+      </nav>
+
+      <a href="tel:+18607182234" class="hidden md:inline-flex items-center gap-2 border border-white/30 rounded-full px-5 py-2.5 text-sm font-semibold hover:bg-white hover:text-navy-900 transition-colors">
+        (860)718-2234
+      </a>
+
+      <button id="nav-toggle" type="button" class="md:hidden inline-flex items-center justify-center p-2 -mr-2" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-nav" class="hidden md:hidden border-t border-white/10">
+    <nav class="flex flex-col px-6 py-5 gap-4 text-sm font-medium" aria-label="Mobile">
+      <a href="index.html" data-nav="index.html" class="text-white/80 hover:text-[var(--gold)] transition-colors">Home</a>
+      <a href="index.html#services" class="text-white/80 hover:text-[var(--gold)] transition-colors">Services</a>
+      <a href="styles.html" data-nav="styles.html" class="text-white/80 hover:text-[var(--gold)] transition-colors">Styles</a>
+      <a href="index.html#community" class="text-white/80 hover:text-[var(--gold)] transition-colors">About</a>
+      <a href="contact.html" data-nav="contact.html" class="text-white/80 hover:text-[var(--gold)] transition-colors">Free Quote</a>
+      <a href="tel:+18607182234" class="mt-2 inline-flex items-center gap-2 border border-white/30 rounded-full px-5 py-2.5 font-semibold w-fit">
+        (860)718-2234
+      </a>
+    </nav>
+  </div>
+</header>
+<!-- /HEADER -->
+
+<main id="main-content">
+
+  <!-- Hero -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 grid md:grid-cols-2 md:min-h-[620px] items-center gap-10 md:gap-16">
+      <div class="order-1 md:order-2 py-14 md:py-10">
+        <p class="uppercase tracking-widest text-[var(--gold-dark)] font-semibold text-sm mb-4">Connecticut Web Systems</p>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
+          Tech designed to connect,<br class="hidden sm:block"> <span class="text-[var(--gold-dark)]">not deflect.</span>
+        </h1>
+        <p class="text-lg text-navy-900/70 leading-relaxed mb-4 max-w-lg">
+Websites built for you, with your clients at the center. Secure, straightforward, and designed so you can keep your attention where it belongs.        </p>
+        <p class="text-lg text-navy-900/70 leading-relaxed mb-9 max-w-lg">
+          
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="contact.html" class="inline-flex justify-center items-center bg-navy-900 text-white font-semibold px-8 py-4 rounded-full hover:bg-navy-800 transition-colors">
+            Talk to us now
+          </a>
+          <a href="tel:+18607182234" class="inline-flex justify-center items-center border-2 border-navy-900 text-navy-900 font-semibold px-8 py-4 rounded-full hover:bg-navy-900 hover:text-[var(--gold)] transition-colors">
+            (860)718-2234
+          </a>
+        </div>
+      </div>
+
+      <div class="order-2 md:order-1">
+        <img
+          src="assets/images/heropage.png"
+          alt="Collage of the Connecticut community MAP Ventures serves"
+          class="w-full h-72 sm:h-96 md:h-full md:max-h-[600px] object-cover rounded-2xl md:rounded-xl"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- Website styles we build -->
+  <section class="bg-white border-t border-navy-900/10">
+    <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold mb-3">Website Styles We Build</h2>
+        <p class="text-navy-900/70">Whatever kind of site your business needs, we&rsquo;ve built it before.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center hover:border-navy-900/20 hover:shadow-sm transition-shadow" style="background-image:url('E-Com.png')">
+          <div class="absolute inset-0 bg-gradient-to-b from-navy-900/85 via-navy-900/35 to-navy-900/10"></div>
+          <div class="relative p-6">
+            <h3 class="font-semibold text-lg mb-2 text-white">E-commerce</h3>
+            <p class="text-white/85 text-sm leading-relaxed">Product catalogs, secure checkout, and payment processing built to convert visitors into customers.</p>
+          </div>
+        </div>
+
+        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center hover:border-navy-900/20 hover:shadow-sm transition-shadow" style="background-image:url('business.png')">
+          <div class="absolute inset-0 bg-gradient-to-b from-navy-900/85 via-navy-900/35 to-navy-900/10"></div>
+          <div class="relative p-6">
+            <h3 class="font-semibold text-lg mb-2 text-white">Business / Corporate</h3>
+            <p class="text-white/85 text-sm leading-relaxed">Polished, professional sites that establish credibility and represent your company well.</p>
+          </div>
+        </div>
+
+        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center hover:border-navy-900/20 hover:shadow-sm transition-shadow" style="background-image:url('Portfolio.png')">
+          <div class="absolute inset-0 bg-gradient-to-b from-navy-900/85 via-navy-900/35 to-navy-900/10"></div>
+          <div class="relative p-6">
+            <h3 class="font-semibold text-lg mb-2 text-white">Portfolio</h3>
+            <p class="text-white/85 text-sm leading-relaxed">Clean, visual layouts that put your work front and center.</p>
+          </div>
+        </div>
+
+        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center hover:border-navy-900/20 hover:shadow-sm transition-shadow" style="background-image:url('blog.png')">
+          <div class="absolute inset-0 bg-gradient-to-b from-navy-900/85 via-navy-900/35 to-navy-900/10"></div>
+          <div class="relative p-6">
+            <h3 class="font-semibold text-lg mb-2 text-white">Blog &amp; Media</h3>
+            <p class="text-white/85 text-sm leading-relaxed">Organized publishing platforms built for regular content and easy reading.</p>
+          </div>
+        </div>
+
+        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center hover:border-navy-900/20 hover:shadow-sm transition-shadow" style="background-image:url('educational.png')">
+          <div class="absolute inset-0 bg-gradient-to-b from-navy-900/85 via-navy-900/35 to-navy-900/10"></div>
+          <div class="relative p-6">
+            <h3 class="font-semibold text-lg mb-2 text-white">Educational</h3>
+            <p class="text-white/85 text-sm leading-relaxed">Course pages and resources organized for students and instructors alike.</p>
+          </div>
+        </div>
+
+        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center hover:border-navy-900/20 hover:shadow-sm transition-shadow" style="background-image:url('community and forums.png')">
+          <div class="absolute inset-0 bg-gradient-to-b from-navy-900/85 via-navy-900/35 to-navy-900/10"></div>
+          <div class="relative p-6">
+            <h3 class="font-semibold text-lg mb-2 text-white">Community &amp; Forums</h3>
+            <p class="text-white/85 text-sm leading-relaxed">Discussion spaces and member features that bring people together around shared interests.</p>
+          </div>
+        </div>
+
+        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center hover:border-navy-900/20 hover:shadow-sm transition-shadow" style="background-image:url('Landing Page.png')">
+          <div class="absolute inset-0 bg-gradient-to-b from-navy-900/85 via-navy-900/35 to-navy-900/10"></div>
+          <div class="relative p-6">
+            <h3 class="font-semibold text-lg mb-2 text-white">Landing Pages</h3>
+            <p class="text-white/85 text-sm leading-relaxed">Fast, focused single-page sites built around one clear action.</p>
+          </div>
+        </div>
+
+        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center hover:border-navy-900/20 hover:shadow-sm transition-shadow" style="background-image:url('directory.png')">
+          <div class="absolute inset-0 bg-gradient-to-b from-navy-900/85 via-navy-900/35 to-navy-900/10"></div>
+          <div class="relative p-6">
+            <h3 class="font-semibold text-lg mb-2 text-white">Directory &amp; Database</h3>
+            <p class="text-white/85 text-sm leading-relaxed">Searchable listings and structured data made easy to browse and maintain.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- Featured service: Website Design & Development -->
+  <section id="services" class="bg-white scroll-mt-20">
+    <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center order-2 md:order-1" style="background-image:url('s1.png')"></div>
+        <div class="order-1 md:order-2">
+          <p class="uppercase tracking-widest text-[var(--gold-dark)] font-semibold text-sm mb-4">Core Service</p>
+          <h2 class="text-3xl font-bold mb-4">Website Design &amp; Development</h2>
+          <p class="text-lg text-navy-900/70 leading-relaxed">
+            We design and build modern websites across eight major categories &mdash; from simple one-page sites to complex platforms with client portals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Static & One-Page Websites -->
+  <section class="bg-offwhite border-y border-navy-900/10">
+    <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div>
+          <p class="uppercase tracking-widest text-[var(--gold-dark)] font-semibold text-sm mb-4">For Quick Launches</p>
+          <h2 class="text-3xl font-bold mb-4">Static &amp; One-Page Websites</h2>
+          <p class="text-lg text-navy-900/70 leading-relaxed">
+            Fast, focused websites designed to convert. Includes hosting setup and full launch support.
+          </p>
+        </div>
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('s2.png')"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dynamic Websites & Client Portals -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center order-2 md:order-1" style="background-image:url('s3.png')"></div>
+        <div class="order-1 md:order-2">
+          <p class="uppercase tracking-widest text-[var(--gold-dark)] font-semibold text-sm mb-4">For Growing Businesses</p>
+          <h2 class="text-3xl font-bold mb-4">Dynamic Websites &amp; Client Portals</h2>
+          <p class="text-lg text-navy-900/70 leading-relaxed">
+            Custom platforms with secure two-way portals, user accounts, and interactive features. Built for businesses that need real systems, not just a brochure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training & Ongoing Support -->
+  <section class="bg-offwhite border-y border-navy-900/10">
+    <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div>
+          <p class="uppercase tracking-widest text-[var(--gold-dark)] font-semibold text-sm mb-4">After Launch</p>
+          <h2 class="text-3xl font-bold mb-4">Training &amp; Ongoing Support</h2>
+          <p class="text-lg text-navy-900/70 leading-relaxed">
+            We provide comprehensive training on the website we deliver, plus continued technical support so your team stays confident after launch.
+          </p>
+        </div>
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('s4.png')"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Website Evaluation & Optimization -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center order-2 md:order-1" style="background-image:url('s5.png')"></div>
+        <div class="order-1 md:order-2">
+          <p class="uppercase tracking-widest text-[var(--gold-dark)] font-semibold text-sm mb-4">For Existing Sites</p>
+          <h2 class="text-3xl font-bold mb-4">Website Evaluation &amp; Optimization</h2>
+          <p class="text-lg text-navy-900/70 leading-relaxed">
+            Accessibility (ADA/WCAG), performance, and security assessments to identify issues and improve existing sites.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="bg-white border-t border-navy-900/10">
+    <div class="mx-auto max-w-5xl px-6 py-20 md:py-28">
+      <div class="text-center max-w-2xl mx-auto mb-16 md:mb-24">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Working together every step of the way</h2>
+        <p class="text-navy-900/70 text-lg leading-relaxed">
+          Personalizing your experience while operating under a proven streamlined process that keeps your project on track and on time.
+        </p>
+      </div>
+
+<ol class="relative list-none">
+        <div class="absolute left-6 md:left-1/2 top-2 bottom-2 w-px bg-navy-900/15 md:-translate-x-1/2" aria-hidden="true"></div>
+
+        <!-- Step 01 — image left, text right -->
+        <li class="relative pb-16 pl-16 md:flex md:items-center md:gap-x-12 md:pb-24 md:pl-0 lg:gap-x-20">
+          <span class="absolute left-6 top-2 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-navy-900 bg-white md:left-1/2 md:top-1/2 md:-translate-y-1/2" aria-hidden="true">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--gold-dark)]"></span>
+          </span>
+          <div class="mb-6 md:mb-0 md:w-1/2">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('step 1.png')"></div>
+          </div>
+          <div class="md:w-1/2">
+            <span class="block text-6xl md:text-7xl font-bold leading-none mb-4 text-[var(--gold-dark)]" aria-hidden="true">01</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-3">Discovery</h3>
+            <p class="text-navy-900/70 text-base md:text-lg leading-relaxed max-w-md">
+              We start by understanding your goals, audience, and constraints. This includes reviewing any existing site, clarifying priorities, and defining what success looks like.
+            </p>
+          </div>
+        </li>
+
+        <!-- Step 02 — text left, image right -->
+        <li class="relative pb-16 pl-16 md:flex md:items-center md:gap-x-12 md:pb-24 md:pl-0 lg:gap-x-20 md:flex-row-reverse">
+          <span class="absolute left-6 top-2 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-navy-900 bg-white md:left-1/2 md:top-1/2 md:-translate-y-1/2" aria-hidden="true">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--gold-dark)]"></span>
+          </span>
+          <div class="mb-6 md:mb-0 md:w-1/2">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('step 2.png')"></div>
+          </div>
+          <div class="md:w-1/2">
+            <span class="block text-6xl md:text-7xl font-bold leading-none mb-4 text-[var(--gold-dark)]" aria-hidden="true">02</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-3">Strategy &amp; Structure</h3>
+            <p class="text-navy-900/70 text-base md:text-lg leading-relaxed max-w-md">
+              We map the site architecture, core messaging, and technical approach before any design or development begins. This keeps the project focused and prevents scope drift.
+            </p>
+          </div>
+        </li>
+
+        <!-- Step 03 — image left, text right -->
+        <li class="relative pb-16 pl-16 md:flex md:items-center md:gap-x-12 md:pb-24 md:pl-0 lg:gap-x-20">
+          <span class="absolute left-6 top-2 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-navy-900 bg-white md:left-1/2 md:top-1/2 md:-translate-y-1/2" aria-hidden="true">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--gold-dark)]"></span>
+          </span>
+          <div class="mb-6 md:mb-0 md:w-1/2">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('step 3.png')"></div>
+          </div>
+          <div class="md:w-1/2">
+            <span class="block text-6xl md:text-7xl font-bold leading-none mb-4 text-[var(--gold-dark)]" aria-hidden="true">03</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-3">Design &amp; Build</h3>
+            <p class="text-navy-900/70 text-base md:text-lg leading-relaxed max-w-md">
+              We design and develop the site with clean structure, modern standards, and attention to performance, accessibility, and usability. You review progress at key stages.
+            </p>
+          </div>
+        </li>
+
+        <!-- Step 04 — text left, image right -->
+        <li class="relative pb-16 pl-16 md:flex md:items-center md:gap-x-12 md:pb-24 md:pl-0 lg:gap-x-20 md:flex-row-reverse">
+          <span class="absolute left-6 top-2 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-navy-900 bg-white md:left-1/2 md:top-1/2 md:-translate-y-1/2" aria-hidden="true">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--gold-dark)]"></span>
+          </span>
+          <div class="mb-6 md:mb-0 md:w-1/2">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('step 4.png')"></div>
+          </div>
+          <div class="md:w-1/2">
+            <span class="block text-6xl md:text-7xl font-bold leading-none mb-4 text-[var(--gold-dark)]" aria-hidden="true">04</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-3">Launch</h3>
+            <p class="text-navy-900/70 text-base md:text-lg leading-relaxed max-w-md">
+              We handle final testing, hosting setup, and deployment. The site goes live with everything configured and working.
+            </p>
+          </div>
+        </li>
+
+        <!-- Step 05 — image left, text right -->
+        <li class="relative pl-16 md:flex md:items-center md:gap-x-12 md:pl-0 lg:gap-x-20">
+          <span class="absolute left-6 top-2 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-navy-900 bg-white md:left-1/2 md:top-1/2 md:-translate-y-1/2" aria-hidden="true">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--gold-dark)]"></span>
+          </span>
+          <div class="mb-6 md:mb-0 md:w-1/2">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('step5.png')"></div>
+          </div>
+          <div class="md:w-1/2">
+            <span class="block text-6xl md:text-7xl font-bold leading-none mb-4 text-[var(--gold-dark)]" aria-hidden="true">05</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-3">Training &amp; Support</h3>
+            <p class="text-navy-900/70 text-base md:text-lg leading-relaxed max-w-md">
+              We provide clear training on the site we deliver and remain available for ongoing technical support so you&rsquo;re not left figuring things out alone.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <!-- About MAP Ventures (consolidated: philosophy, privacy, human approach, CT roots) -->
+  <section id="community" class="bg-white scroll-mt-20">
+    <div class="mx-auto max-w-7xl px-6 py-20 md:py-28">
+      <div class="grid items-center gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">
+
+        <div>
+          <p class="mb-5 text-sm font-semibold uppercase tracking-widest text-[var(--gold-dark)]">About MAP Ventures</p>
+          <h2 class="mb-10 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
+            Our Mission: Getting your business in position to compete with the best of them &mdash;
+            <span class="block mt-1 text-[var(--gold-dark)]"></span>
+          </h2>
+
+          <div class="space-y-8">
+            <div>
+              <h3 class="mb-2 text-xl font-bold">Our Philosophy</h3>
+              <p class="max-w-prose text-lg leading-relaxed text-navy-900/70">
+                MAP Ventures exists to help hard-working local businesses gain real traction so the people who run them can stay focused on the work that actually matters. Community starts with small business. People want to support local practices they can trust &mdash; yet most of what they see is big-corporation marketing. Today, running a practice means you&rsquo;re expected to be an expert in far more than your craft: technology, marketing, sales, and the systems that sit between you and your clients. We&rsquo;re here to relieve that pressure. We build the digital presence and tools that connect you more directly to the people you serve, so you can spend less time managing the noise and more time doing the work you set out to do.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="about image 1.jpg"
+          alt="Diagram showing MAP Ventures connecting you directly to your client, bypassing algorithms, ads, and third-party platforms"
+          class="h-auto w-full rounded-xl object-contain"
+        >
+
+      </div>
+    </div>
+  </section>
+
+
+<!--HIPAA highlight -->
+  <section class="bg-offwhite border-y border-navy-900/10">
+    <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+      <div class="bg-navy-900 rounded-3xl p-8 sm:p-10 md:p-14 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="inline-block border border-[var(--gold)]/50 text-[var(--gold)] text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-5">
+            Early Access
+          </span>
+          <h2 class="text-3xl font-bold text-white mb-4">HIPAA-Compliant Health &amp; Wellness Sites</h2>
+          <p class="text-white/70 leading-relaxed mb-7">
+            A new line of web systems built specifically for health and wellness practices &mdash; designed to meet HIPAA requirements from the ground up, without sacrificing the clear, human experience your clients expect.
+          </p>
+          <a href="contact.html" class="inline-flex items-center bg-white text-navy-900 font-semibold px-7 py-3.5 rounded-full hover:bg-offwhite transition-colors">
+            Get Early Access
+          </a>
+        </div>
+        <div class="border border-white/15 rounded-2xl p-8">
+          <ul class="space-y-4 text-white/85 text-sm">
+            <li class="flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              <span>Built for HIPAA compliance from the ground up</span>
+            </li>
+            <li class="flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              <span>Secure by default, not bolted on later</span>
+            </li>
+            <li class="flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              <span>Made for health &amp; wellness practices and their clients</span>
+            </li>
+            <li class="flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              <span>Same real-person support, no exceptions</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- Technology note -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-4xl px-6 py-14 md:py-16 text-center">
+      <div class="mx-auto mb-6 h-11 w-11 rounded-full bg-navy-900 text-white flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M14.25 3.104v5.714c0 .597.237 1.169.659 1.591L19 14.5M5 14.5h14l1.106 3.316a1 1 0 01-.949 1.317H4.843a1 1 0 01-.949-1.317L5 14.5z" />
+        </svg>
+      </div>
+      <p class="text-lg text-navy-900/80 leading-relaxed max-w-2xl mx-auto">
+        Security and privacy are built in from the start — not added later as an afterthought. Ensuring yours and your clients' information don't get sold to the highest bidder. The systems and databases we work with are chosen to protect your data and maintain discretion at every step, so both you and the people you serve stay safe.
+      </p>
+    </div>
+  </section>
+</main>
+
+ 
+<!-- FOOTER (identical on every page) -->
+<footer class="bg-navy-900 text-white">
+
+  <!-- Value props (footer-native treatment — compact, icon + label + one line) -->
+  <div class="border-b border-[var(--gold)]/20">
+    <div class="mx-auto max-w-7xl px-6 py-10 md:py-12">
+      <div class="grid gap-8 sm:grid-cols-3 sm:gap-10">
+
+        <div>
+          <div class="flex items-center gap-2.5 mb-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v5c0 4.5-3 8.25-7 9.5-4-1.25-7-5-7-9.5V6l7-3z" />
+            </svg>
+            <p class="font-semibold text-sm text-white">Your Data, Protected</p>
+          </div>
+          <p class="text-xs text-white/55 leading-relaxed">Never sold. Not to anyone.</p>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-2.5 mb-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-1.85.925a11.05 11.05 0 005.516 5.516l.925-1.85a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <p class="font-semibold text-sm text-white">One Call Reaches a Person</p>
+          </div>
+          <p class="text-xs text-white/55 leading-relaxed">No chatbots. No ticket queues.</p>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-2.5 mb-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4" />
+            </svg>
+            <p class="font-semibold text-sm text-white">Built With You</p>
+          </div>
+          <p class="text-xs text-white/55 leading-relaxed">Made for your business and your clients.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Links & contact -->
+  <div class="mx-auto max-w-7xl px-6 py-12 grid gap-10 md:grid-cols-3">
+    <div>
+      <div class="font-bold text-xl mb-4">
+        <span>MAP</span><span class="font-normal text-white/70"> Ventures</span>
+      </div>
+      <p class="text-white/70 text-sm leading-relaxed max-w-xs">
+        Tech designed to connect, not deflect. Rooted in the Connecticut community.
+      </p>
+    </div>
+
+    <div>
+      <div class="font-semibold text-sm uppercase tracking-wide text-white/50 mb-4">Contact</div>
+      <ul class="space-y-3 text-sm text-white/80">
+        <li><a href="tel:+18607182234" class="hover:text-[var(--gold)] transition-colors">(860)718-2234</a></li>
+        <li><a href="mailto:hello@mapventures.com" class="hover:text-[var(--gold)] transition-colors">hello@mapventures.com</a></li>
+        <li>Connecticut, USA</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="font-semibold text-sm uppercase tracking-wide text-white/50 mb-4">Pages</div>
+      <ul class="space-y-3 text-sm text-white/80">
+        <li><a href="index.html" class="hover:text-[var(--gold)] transition-colors">Home</a></li>
+        <li><a href="index.html#services" class="hover:text-[var(--gold)] transition-colors">Services</a></li>
+        <li><a href="about.html" class="hover:text-[var(--gold)] transition-colors">About</a></li>
+        <li><a href="contact.html" class="hover:text-[var(--gold)] transition-colors">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-6 py-5 text-xs text-white/50 flex flex-col sm:flex-row justify-between gap-2">
+      <span>&copy; 2026 MAP Ventures. All rights reserved.</span>
+      <span>Connecticut, USA</span>
+    </div>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

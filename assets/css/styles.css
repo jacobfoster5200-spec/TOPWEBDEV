@@ -1,0 +1,140 @@
+/* MAP Ventures — shared site styles (used alongside Tailwind CDN utilities) */
+
+:root {
+  /* Single source of truth for the site's gold accent. --gold-dark meets
+     WCAG AA text contrast on white/off-white; --gold is for use on navy
+     backgrounds or as a non-text (border/fill) accent. */
+  --gold: #c6a667;
+  --gold-dark: #8a6a2e;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Guards against the full-bleed breakout (below) ever introducing a
+     horizontal scrollbar, since 100vw can be a hair wider than 100% on
+     some browsers once the scrollbar gutter is factored in. */
+  overflow-x: hidden;
+}
+
+/* Full-bleed breakout — spans the viewport edge to edge regardless of an
+   ancestor's centered max-width container. Used by the portfolio carousel. */
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--gold-dark);
+  outline-offset: 2px;
+}
+
+/* Skip link for keyboard/screen-reader users */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  z-index: 100;
+  background: #ffffff;
+  color: #0b2545;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* Active nav link, applied by assets/js/main.js based on current page */
+.nav-active {
+  color: var(--gold) !important;
+  position: relative;
+}
+
+.nav-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+/* Portfolio "coverflow" carousel (styles.html) — depth handled here so
+   assets/js/main.js only ever toggles which of these four states a card is in. */
+.carousel-viewport {
+  perspective: 1200px;
+}
+
+.carousel-track {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.carousel-card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  /* Scales with the now-full-bleed viewport instead of a fixed max, while
+     staying readable on phones and bounded on very wide screens. */
+  width: clamp(280px, 30vw, 480px);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.6s ease;
+}
+
+.carousel-card.is-center {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+
+.carousel-card.is-prev {
+  transform: translateX(calc(-50% - 62%)) translateZ(-100px) scale(0.82);
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.carousel-card.is-next {
+  transform: translateX(calc(-50% + 62%)) translateZ(-100px) scale(0.82);
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.carousel-card.is-hidden {
+  transform: translateX(-50%) translateZ(-200px) scale(0.6);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Mobile: single centered card only, no side peek */
+@media (max-width: 639px) {
+  .carousel-card.is-prev,
+  .carousel-card.is-next {
+    transform: translateX(-50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-card {
+    transition: opacity 0.3s ease;
+  }
+}

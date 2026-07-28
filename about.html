@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | MAP Ventures</title>
+<meta name="description" content="MAP Ventures is a Connecticut-based web systems company built on a simple idea: tech designed to connect, not deflect.">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: {
+            950: '#071528',
+            900: '#0B2545',
+            800: '#123A63',
+            700: '#1B4E80',
+            600: '#2563A3',
+          },
+          offwhite: '#F7F8FA',
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-white text-navy-900 antialiased">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- HEADER (identical on every page) -->
+<header class="bg-navy-900 text-white sticky top-0 z-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-baseline gap-1.5 font-bold text-xl tracking-tight">
+        <span>MAP</span><span class="font-normal text-white/70">Ventures</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-10 text-sm font-medium" aria-label="Primary">
+        <a href="index.html" data-nav="index.html" class="text-white/70 hover:text-[var(--gold)] transition-colors">Home</a>
+        <a href="index.html#services" class="text-white/70 hover:text-[var(--gold)] transition-colors">Services</a>
+        <a href="styles.html" data-nav="styles.html" class="text-white/70 hover:text-[var(--gold)] transition-colors">Styles</a>
+        <a href="about.html" data-nav="about.html" class="text-white/70 hover:text-[var(--gold)] transition-colors">About</a>
+        <a href="contact.html" data-nav="contact.html" class="text-white/70 hover:text-[var(--gold)] transition-colors">Free Quote</a>
+      </nav>
+
+      <a href="tel:+18607182234" class="hidden md:inline-flex items-center gap-2 border border-white/30 rounded-full px-5 py-2.5 text-sm font-semibold hover:bg-white hover:text-navy-900 transition-colors">
+        (860)718-2234
+      </a>
+
+      <button id="nav-toggle" type="button" class="md:hidden inline-flex items-center justify-center p-2 -mr-2" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-nav" class="hidden md:hidden border-t border-white/10">
+    <nav class="flex flex-col px-6 py-5 gap-4 text-sm font-medium" aria-label="Mobile">
+      <a href="index.html" data-nav="index.html" class="text-white/80 hover:text-[var(--gold)] transition-colors">Home</a>
+      <a href="index.html#services" class="text-white/80 hover:text-[var(--gold)] transition-colors">Services</a>
+      <a href="styles.html" data-nav="styles.html" class="text-white/80 hover:text-[var(--gold)] transition-colors">Styles</a>
+      <a href="about.html" data-nav="about.html" class="text-white/80 hover:text-[var(--gold)] transition-colors">About</a>
+      <a href="contact.html" data-nav="contact.html" class="text-white/80 hover:text-[var(--gold)] transition-colors">Free Quote</a>
+      <a href="tel:+18607182234" class="mt-2 inline-flex items-center gap-2 border border-white/30 rounded-full px-5 py-2.5 font-semibold w-fit">
+        (860)718-2234
+      </a>
+    </nav>
+  </div>
+</header>
+<!-- /HEADER -->
+
+<main id="main-content">
+
+  <!-- Page intro — the tagline's most deliberate, dominant treatment on the site -->
+  <section class="bg-navy-900">
+    <div class="mx-auto max-w-4xl px-6 py-24 md:py-32 text-center">
+      <p class="uppercase tracking-widest text-[var(--gold)] font-semibold text-sm mb-6">About MAP Ventures</p>
+      <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-[1.05] tracking-tight">
+        Tech designed to connect,
+        <span class="block text-[var(--gold)] mt-1">not deflect.</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Philosophy — asymmetric label + measured column -->
+  <section class="bg-white border-b border-navy-900/10">
+    <div class="mx-auto max-w-5xl px-6 py-16 md:py-24">
+      <div class="md:grid md:grid-cols-12 md:gap-x-12">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 md:col-span-4 md:mb-0">Our Philosophy</h2>
+        <p class="max-w-prose text-lg leading-relaxed text-navy-900/70 md:col-span-7 md:col-start-6 md:text-xl">
+          Most &ldquo;modern&rdquo; web tech deflects &mdash; chatbots that dead-end, contact forms nobody reads, dashboards nobody asked for. MAP Ventures exists to build the opposite: systems that connect you to your clients, and connect us to you, directly.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy stance — text with image placeholder, right -->
+  <section class="bg-offwhite border-b border-navy-900/10">
+    <div class="mx-auto max-w-6xl px-6 py-16 md:py-24">
+      <div class="grid items-center gap-10 md:grid-cols-2 md:gap-16">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-5">We Protect What&rsquo;s Yours</h2>
+          <p class="max-w-prose text-lg leading-relaxed text-navy-900/70">
+            Your information &mdash; and your clients&rsquo; information &mdash; is not a product. We don&rsquo;t sell data to advertisers or third parties. What you share with us stays with us.
+          </p>
+        </div>
+        <div class="aspect-[4/3] rounded-2xl border border-navy-900/10 bg-navy-900/5 flex items-center justify-center">
+          <span class="text-xs font-semibold uppercase tracking-widest text-navy-900/40">Image</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Human approach — image placeholder, left (alternates from the section above) -->
+  <section class="bg-white border-b border-navy-900/10">
+    <div class="mx-auto max-w-6xl px-6 py-16 md:py-24">
+      <div class="grid items-center gap-10 md:grid-cols-2 md:gap-16">
+        <div class="aspect-[4/3] rounded-2xl border border-navy-900/10 bg-navy-900/5 flex items-center justify-center order-2 md:order-1">
+          <span class="text-xs font-semibold uppercase tracking-widest text-navy-900/40">Image</span>
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="text-2xl md:text-3xl font-bold mb-5">A Real Person, Every Time</h2>
+          <p class="max-w-prose text-lg leading-relaxed text-navy-900/70">
+            When something needs attention, you call, and someone who knows your site picks up. No ticket number. No chatbot pretending to be helpful. Just a conversation. We&rsquo;re approachable, non-intimidating, and here with you every step of the way.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CT roots — centered closing statement, distinct from the grid pattern above -->
+  <section class="bg-offwhite">
+    <div class="mx-auto max-w-2xl px-6 py-16 md:py-24 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-5">Rooted in Connecticut</h2>
+      <p class="text-lg leading-relaxed text-navy-900/70">
+        MAP Ventures is based in Connecticut, and we build for Connecticut businesses first. We understand the community because we&rsquo;re part of it.
+      </p>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="bg-white border-t border-navy-900/10">
+    <div class="mx-auto max-w-5xl px-6 py-20 md:py-28">
+      <div class="text-center max-w-2xl mx-auto mb-16 md:mb-24">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">How We Work</h2>
+        <p class="text-navy-900/70 text-lg leading-relaxed">
+          Every project follows this process so you always know where things stand and what comes next.
+        </p>
+      </div>
+
+      <ol class="relative list-none">
+        <div class="absolute left-6 md:left-1/2 top-2 bottom-2 w-px bg-navy-900/15 md:-translate-x-1/2" aria-hidden="true"></div>
+
+        <!-- Step 01 — image left, text right -->
+        <li class="relative pb-16 pl-16 md:flex md:items-center md:gap-x-12 md:pb-24 md:pl-0 lg:gap-x-20">
+          <span class="absolute left-6 top-2 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-navy-900 bg-white md:left-1/2 md:top-1/2 md:-translate-y-1/2" aria-hidden="true">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--gold-dark)]"></span>
+          </span>
+          <div class="mb-6 md:mb-0 md:w-1/2">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('step 1.png')"></div>
+          </div>
+          <div class="md:w-1/2">
+            <span class="block text-6xl md:text-7xl font-bold leading-none mb-4 text-[var(--gold-dark)]" aria-hidden="true">01</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-3">Discovery</h3>
+            <p class="text-navy-900/70 text-base md:text-lg leading-relaxed max-w-md">
+              We start by understanding your goals, audience, and constraints. This includes reviewing any existing site, clarifying priorities, and defining what success looks like.
+            </p>
+          </div>
+        </li>
+
+        <!-- Step 02 — text left, image right -->
+        <li class="relative pb-16 pl-16 md:flex md:items-center md:gap-x-12 md:pb-24 md:pl-0 lg:gap-x-20 md:flex-row-reverse">
+          <span class="absolute left-6 top-2 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-navy-900 bg-white md:left-1/2 md:top-1/2 md:-translate-y-1/2" aria-hidden="true">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--gold-dark)]"></span>
+          </span>
+          <div class="mb-6 md:mb-0 md:w-1/2">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('step 2.png')"></div>
+          </div>
+          <div class="md:w-1/2">
+            <span class="block text-6xl md:text-7xl font-bold leading-none mb-4 text-[var(--gold-dark)]" aria-hidden="true">02</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-3">Strategy &amp; Structure</h3>
+            <p class="text-navy-900/70 text-base md:text-lg leading-relaxed max-w-md">
+              We map the site architecture, core messaging, and technical approach before any design or development begins. This keeps the project focused and prevents scope drift.
+            </p>
+          </div>
+        </li>
+
+        <!-- Step 03 — image left, text right -->
+        <li class="relative pb-16 pl-16 md:flex md:items-center md:gap-x-12 md:pb-24 md:pl-0 lg:gap-x-20">
+          <span class="absolute left-6 top-2 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-navy-900 bg-white md:left-1/2 md:top-1/2 md:-translate-y-1/2" aria-hidden="true">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--gold-dark)]"></span>
+          </span>
+          <div class="mb-6 md:mb-0 md:w-1/2">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('step 3.png')"></div>
+          </div>
+          <div class="md:w-1/2">
+            <span class="block text-6xl md:text-7xl font-bold leading-none mb-4 text-[var(--gold-dark)]" aria-hidden="true">03</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-3">Design &amp; Build</h3>
+            <p class="text-navy-900/70 text-base md:text-lg leading-relaxed max-w-md">
+              We design and develop the site with clean structure, modern standards, and attention to performance, accessibility, and usability. You review progress at key stages.
+            </p>
+          </div>
+        </li>
+
+        <!-- Step 04 — text left, image right -->
+        <li class="relative pb-16 pl-16 md:flex md:items-center md:gap-x-12 md:pb-24 md:pl-0 lg:gap-x-20 md:flex-row-reverse">
+          <span class="absolute left-6 top-2 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-navy-900 bg-white md:left-1/2 md:top-1/2 md:-translate-y-1/2" aria-hidden="true">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--gold-dark)]"></span>
+          </span>
+          <div class="mb-6 md:mb-0 md:w-1/2">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('step 4.png')"></div>
+          </div>
+          <div class="md:w-1/2">
+            <span class="block text-6xl md:text-7xl font-bold leading-none mb-4 text-[var(--gold-dark)]" aria-hidden="true">04</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-3">Launch</h3>
+            <p class="text-navy-900/70 text-base md:text-lg leading-relaxed max-w-md">
+              We handle final testing, hosting setup, and deployment. The site goes live with everything configured and working.
+            </p>
+          </div>
+        </li>
+
+        <!-- Step 05 — image left, text right -->
+        <li class="relative pl-16 md:flex md:items-center md:gap-x-12 md:pl-0 lg:gap-x-20">
+          <span class="absolute left-6 top-2 z-10 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-navy-900 bg-white md:left-1/2 md:top-1/2 md:-translate-y-1/2" aria-hidden="true">
+            <span class="h-1.5 w-1.5 rounded-full bg-[var(--gold-dark)]"></span>
+          </span>
+          <div class="mb-6 md:mb-0 md:w-1/2">
+            <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-navy-900/10 bg-cover bg-center" style="background-image:url('step5.png')"></div>
+          </div>
+          <div class="md:w-1/2">
+            <span class="block text-6xl md:text-7xl font-bold leading-none mb-4 text-[var(--gold-dark)]" aria-hidden="true">05</span>
+            <h3 class="text-xl md:text-2xl font-bold mb-3">Training &amp; Support</h3>
+            <p class="text-navy-900/70 text-base md:text-lg leading-relaxed max-w-md">
+              We provide clear training on the site we deliver and remain available for ongoing technical support so you&rsquo;re not left figuring things out alone.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="bg-navy-900">
+    <div class="mx-auto max-w-7xl px-6 py-16 md:py-20 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Let&rsquo;s talk.</h2>
+      <p class="text-white/70 mb-8 max-w-xl mx-auto">If this sounds like the kind of company you want to work with, we&rsquo;d like to hear from you.</p>
+      <a href="tel:+18607182234" class="inline-flex items-center gap-2 bg-white text-navy-900 font-semibold px-8 py-4 rounded-full hover:bg-offwhite transition-colors">
+        Call (860)718-2234
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER (identical on every page) -->
+<footer class="bg-navy-900 text-white">
+
+  <!-- Value props (footer-native treatment — compact, icon + label + one line) -->
+  <div class="border-b border-[var(--gold)]/20">
+    <div class="mx-auto max-w-7xl px-6 py-10 md:py-12">
+      <div class="grid gap-8 sm:grid-cols-3 sm:gap-10">
+
+        <div>
+          <div class="flex items-center gap-2.5 mb-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v5c0 4.5-3 8.25-7 9.5-4-1.25-7-5-7-9.5V6l7-3z" />
+            </svg>
+            <p class="font-semibold text-sm text-white">Your Data, Protected</p>
+          </div>
+          <p class="text-xs text-white/55 leading-relaxed">Never sold. Not to anyone.</p>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-2.5 mb-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-1.85.925a11.05 11.05 0 005.516 5.516l.925-1.85a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <p class="font-semibold text-sm text-white">One Call Reaches a Person</p>
+          </div>
+          <p class="text-xs text-white/55 leading-relaxed">No chatbots. No ticket queues.</p>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-2.5 mb-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4" />
+            </svg>
+            <p class="font-semibold text-sm text-white">Built With You</p>
+          </div>
+          <p class="text-xs text-white/55 leading-relaxed">Made for your business and your clients.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Links & contact -->
+  <div class="mx-auto max-w-7xl px-6 py-12 grid gap-10 md:grid-cols-3">
+    <div>
+      <div class="font-bold text-xl mb-4">
+        <span>MAP</span><span class="font-normal text-white/70"> Ventures</span>
+      </div>
+      <p class="text-white/70 text-sm leading-relaxed max-w-xs">
+        Tech designed to connect, not deflect. Rooted in the Connecticut community.
+      </p>
+    </div>
+
+    <div>
+      <div class="font-semibold text-sm uppercase tracking-wide text-white/50 mb-4">Contact</div>
+      <ul class="space-y-3 text-sm text-white/80">
+        <li><a href="tel:+18607182234" class="hover:text-[var(--gold)] transition-colors">(860)718-2234</a></li>
+        <li><a href="mailto:hello@mapventures.com" class="hover:text-[var(--gold)] transition-colors">hello@mapventures.com</a></li>
+        <li>Connecticut, USA</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="font-semibold text-sm uppercase tracking-wide text-white/50 mb-4">Pages</div>
+      <ul class="space-y-3 text-sm text-white/80">
+        <li><a href="index.html" class="hover:text-[var(--gold)] transition-colors">Home</a></li>
+        <li><a href="index.html#services" class="hover:text-[var(--gold)] transition-colors">Services</a></li>
+        <li><a href="about.html" class="hover:text-[var(--gold)] transition-colors">About</a></li>
+        <li><a href="contact.html" class="hover:text-[var(--gold)] transition-colors">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-6 py-5 text-xs text-white/50 flex flex-col sm:flex-row justify-between gap-2">
+      <span>&copy; 2026 MAP Ventures. All rights reserved.</span>
+      <span>Connecticut, USA</span>
+    </div>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
+  

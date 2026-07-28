@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styles | MAP Ventures</title>
+<meta name="description" content="A showcase of website styles MAP Ventures builds — polished, calm, bold, playful, minimal, and more. See the range before you choose your look.">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: {
+            950: '#071528',
+            900: '#0B2545',
+            800: '#123A63',
+            700: '#1B4E80',
+            600: '#2563A3',
+          },
+          offwhite: '#F7F8FA',
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-white text-navy-900 antialiased">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- HEADER (identical on every page) -->
+<header class="bg-navy-900 text-white sticky top-0 z-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-baseline gap-1.5 font-bold text-xl tracking-tight">
+        <span>MAP</span><span class="font-normal text-white/70">Ventures</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-10 text-sm font-medium" aria-label="Primary">
+        <a href="index.html" data-nav="index.html" class="text-white/70 hover:text-[var(--gold)] transition-colors">Home</a>
+        <a href="index.html#services" class="text-white/70 hover:text-[var(--gold)] transition-colors">Services</a>
+        <a href="styles.html" data-nav="styles.html" class="text-white/70 hover:text-[var(--gold)] transition-colors">Styles</a>
+        <a href="index.html#community" class="text-white/70 hover:text-[var(--gold)] transition-colors">About</a>
+        <a href="contact.html" data-nav="contact.html" class="text-white/70 hover:text-[var(--gold)] transition-colors">Free Quote</a>
+      </nav>
+
+      <a href="tel:+18607182234" class="hidden md:inline-flex items-center gap-2 border border-white/30 rounded-full px-5 py-2.5 text-sm font-semibold hover:bg-white hover:text-navy-900 transition-colors">
+        (860)718-2234
+      </a>
+
+      <button id="nav-toggle" type="button" class="md:hidden inline-flex items-center justify-center p-2 -mr-2" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-nav" class="hidden md:hidden border-t border-white/10">
+    <nav class="flex flex-col px-6 py-5 gap-4 text-sm font-medium" aria-label="Mobile">
+      <a href="index.html" data-nav="index.html" class="text-white/80 hover:text-[var(--gold)] transition-colors">Home</a>
+      <a href="index.html#services" class="text-white/80 hover:text-[var(--gold)] transition-colors">Services</a>
+      <a href="styles.html" data-nav="styles.html" class="text-white/80 hover:text-[var(--gold)] transition-colors">Styles</a>
+      <a href="index.html#community" class="text-white/80 hover:text-[var(--gold)] transition-colors">About</a>
+      <a href="contact.html" data-nav="contact.html" class="text-white/80 hover:text-[var(--gold)] transition-colors">Free Quote</a>
+      <a href="tel:+18607182234" class="mt-2 inline-flex items-center gap-2 border border-white/30 rounded-full px-5 py-2.5 font-semibold w-fit">
+        (860)718-2234
+      </a>
+    </nav>
+  </div>
+</header>
+<!-- /HEADER -->
+
+<main id="main-content">
+
+  
+
+  <!-- Featured Work + Styles: one unified section -->
+  <section class="bg-offwhite">
+    <div class="mx-auto max-w-7xl px-6 py-20 md:py-28">
+      <div class="max-w-2xl mb-14 md:mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Work</h2>
+        <p class="text-navy-900/70 text-lg leading-relaxed">
+          A closer look at real projects we&rsquo;ve built for clients &mdash; not just the styles we can do, but the work we&rsquo;ve actually delivered.
+        </p>
+      </div>
+
+      <div id="portfolio-carousel" class="full-bleed relative" role="region" aria-roledescription="carousel" aria-label="Featured work">
+        <div class="carousel-viewport relative h-[22rem] sm:h-[26rem] md:h-[28rem] lg:h-[32rem]">
+          <ul id="portfolio-carousel-track" class="carousel-track h-full" role="list">
+
+            <li class="carousel-card is-center" role="listitem">
+              <article class="rounded-2xl border border-navy-900/10 bg-white shadow-sm overflow-hidden">
+                <div class="aspect-[4/3] bg-navy-900/5">
+                  <img src="display/6e092814-8214-4b15-818f-ac298e41a178.jpg" alt="Restaurant website design mockup" class="h-full w-full object-cover">
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-1">Project One</h3>
+                  <p class="text-navy-900/60 text-sm leading-relaxed">Client name &amp; project type</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="carousel-card is-next" role="listitem">
+              <article class="rounded-2xl border border-navy-900/10 bg-white shadow-sm overflow-hidden">
+                <div class="aspect-[4/3] bg-navy-900/5">
+                  <img src="display/8377fc8d-b11a-4342-80e7-92d19cb1de0d.jpg" alt="Lounge and restaurant website design mockup" class="h-full w-full object-cover">
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-1">Project Two</h3>
+                  <p class="text-navy-900/60 text-sm leading-relaxed">Client name &amp; project type</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="carousel-card is-hidden" role="listitem">
+              <article class="rounded-2xl border border-navy-900/10 bg-white shadow-sm overflow-hidden">
+                <div class="aspect-[4/3] bg-navy-900/5">
+                  <img src="display/83678897-cff3-44da-9301-95fbb2ebfc57.jpg" alt="Interior design consultation website mockup" class="h-full w-full object-cover">
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-1">Project Three</h3>
+                  <p class="text-navy-900/60 text-sm leading-relaxed">Client name &amp; project type</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="carousel-card is-hidden" role="listitem">
+              <article class="rounded-2xl border border-navy-900/10 bg-white shadow-sm overflow-hidden">
+                <div class="aspect-[4/3] bg-navy-900/5">
+                  <img src="display/image.jpg" alt="Home services business website mockup" class="h-full w-full object-cover">
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-1">Project Four</h3>
+                  <p class="text-navy-900/60 text-sm leading-relaxed">Client name &amp; project type</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="carousel-card is-hidden" role="listitem">
+              <article class="rounded-2xl border border-navy-900/10 bg-white shadow-sm overflow-hidden">
+                <div class="aspect-[4/3] bg-navy-900/5">
+                  <img src="display/poss.jpg" alt="Local restaurant business website mockup" class="h-full w-full object-cover">
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-1">Project Five</h3>
+                  <p class="text-navy-900/60 text-sm leading-relaxed">Client name &amp; project type</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="carousel-card is-prev" role="listitem">
+              <article class="rounded-2xl border border-navy-900/10 bg-white shadow-sm overflow-hidden">
+                <div class="aspect-[4/3] bg-navy-900/5">
+                  <img src="display/last for now.jpg" alt="Cleaning and maintenance service website mockup" class="h-full w-full object-cover">
+                </div>
+                <div class="p-5">
+                  <h3 class="font-bold text-lg mb-1">Project Six</h3>
+                  <p class="text-navy-900/60 text-sm leading-relaxed">Client name &amp; project type</p>
+                </div>
+              </article>
+            </li>
+
+          </ul>
+        </div>
+
+        <button type="button" class="carousel-prev absolute left-2 sm:left-4 md:left-8 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-navy-900/15 bg-white text-navy-900 shadow-sm transition-colors hover:border-[var(--gold)] hover:text-[var(--gold-dark)]" aria-label="Previous project">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button type="button" class="carousel-next absolute right-2 sm:right-4 md:right-8 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-navy-900/15 bg-white text-navy-900 shadow-sm transition-colors hover:border-[var(--gold)] hover:text-[var(--gold-dark)]" aria-label="Next project">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mt-8 md:mt-10 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+
+        <div>
+          <div class="aspect-[4/3] rounded-2xl border border-navy-900/10 bg-navy-900/5 overflow-hidden hover:border-navy-900/20 transition-colors">
+            <img src="showcase/piece 6.png" alt="Bold, colorful split-portrait designer and coder portfolio mockup" class="h-full w-full object-cover">
+          </div>
+          <h3 class="font-semibold text-lg mt-4 mb-1">Playful &amp; Expressive</h3>
+          <p class="text-navy-900/60 text-sm leading-relaxed">Bright, energetic, and full of personality.</p>
+        </div>
+
+        <div>
+          <div class="aspect-[4/3] rounded-2xl border border-navy-900/10 bg-navy-900/5 overflow-hidden hover:border-navy-900/20 transition-colors">
+            <img src="showcase/piece 3.webp" alt="Dark minimal frontend developer portfolio mockup" class="h-full w-full object-cover">
+          </div>
+          <h3 class="font-semibold text-lg mt-4 mb-1">Clean &amp; Minimal</h3>
+          <p class="text-navy-900/60 text-sm leading-relaxed">Stripped back to what matters, with nothing extra in the way.</p>
+        </div>
+
+        <div>
+          <div class="aspect-[4/3] rounded-2xl border border-navy-900/10 bg-navy-900/5 overflow-hidden hover:border-navy-900/20 transition-colors">
+            <img src="showcase/piece 2.webp" alt="Corporate payroll SaaS website mockup with features grid" class="h-full w-full object-cover">
+          </div>
+          <h3 class="font-semibold text-lg mt-4 mb-1">Editorial &amp; Elegant</h3>
+          <p class="text-navy-900/60 text-sm leading-relaxed">Typography-led layouts with a magazine-style sense of pace.</p>
+        </div>
+
+        <div>
+          <div class="aspect-[4/3] rounded-2xl border border-navy-900/10 bg-navy-900/5 overflow-hidden hover:border-navy-900/20 transition-colors">
+            <img src="showcase/[iece 5.webp" alt="Natural plant shop e-commerce website mockup" class="h-full w-full object-cover">
+          </div>
+          <h3 class="font-semibold text-lg mt-4 mb-1">Rustic &amp; Artisanal</h3>
+          <p class="text-navy-900/60 text-sm leading-relaxed">Warm textures and natural tones for handmade and local brands.</p>
+        </div>
+
+        <div>
+          <div class="aspect-[4/3] rounded-2xl border border-navy-900/10 bg-navy-900/5 overflow-hidden hover:border-navy-900/20 transition-colors">
+            <img src="Modern Tech.png" alt="Bold dark creative agency portfolio website mockup" class="h-full w-full object-cover">
+          </div>
+          <h3 class="font-semibold text-lg mt-4 mb-1">Modern Tech &amp; Startup</h3>
+          <p class="text-navy-900/60 text-sm leading-relaxed">Sharp, systematic, and built for fast-moving products.</p>
+        </div>
+
+        <div>
+          <div class="aspect-[4/3] rounded-2xl border border-navy-900/10 bg-navy-900/5 overflow-hidden hover:border-navy-900/20 transition-colors">
+            <img src="image-7.jpg" alt="Upscale mountain resort booking website mockup" class="h-full w-full object-cover">
+          </div>
+          <h3 class="font-semibold text-lg mt-4 mb-1">Luxury &amp; Boutique</h3>
+          <p class="text-navy-900/60 text-sm leading-relaxed">Understated richness for brands that sell on craft, not volume.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="bg-navy-900">
+    <div class="mx-auto max-w-7xl px-6 py-16 md:py-20 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Don&rsquo;t see your style?</h2>
+      <p class="text-white/70 mb-8 max-w-xl mx-auto">This is a sample, not the limit. Call us and we&rsquo;ll talk through the look that fits your business.</p>
+      <a href="tel:+18607182234" class="inline-flex items-center gap-2 bg-white text-navy-900 font-semibold px-8 py-4 rounded-full hover:bg-offwhite transition-colors">
+        Call (860)718-2234
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER (identical on every page) -->
+<footer class="bg-navy-900 text-white">
+
+  <!-- Value props (footer-native treatment — compact, icon + label + one line) -->
+  <div class="border-b border-[var(--gold)]/20">
+    <div class="mx-auto max-w-7xl px-6 py-10 md:py-12">
+      <div class="grid gap-8 sm:grid-cols-3 sm:gap-10">
+
+        <div>
+          <div class="flex items-center gap-2.5 mb-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v5c0 4.5-3 8.25-7 9.5-4-1.25-7-5-7-9.5V6l7-3z" />
+            </svg>
+            <p class="font-semibold text-sm text-white">Your Data, Protected</p>
+          </div>
+          <p class="text-xs text-white/55 leading-relaxed">Never sold. Not to anyone.</p>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-2.5 mb-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-1.85.925a11.05 11.05 0 005.516 5.516l.925-1.85a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <p class="font-semibold text-sm text-white">One Call Reaches a Person</p>
+          </div>
+          <p class="text-xs text-white/55 leading-relaxed">No chatbots. No ticket queues.</p>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-2.5 mb-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0 text-[var(--gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4" />
+            </svg>
+            <p class="font-semibold text-sm text-white">Built With You</p>
+          </div>
+          <p class="text-xs text-white/55 leading-relaxed">Made for your business and your clients.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Links & contact -->
+  <div class="mx-auto max-w-7xl px-6 py-12 grid gap-10 md:grid-cols-3">
+    <div>
+      <div class="font-bold text-xl mb-4">
+        <span>MAP</span><span class="font-normal text-white/70"> Ventures</span>
+      </div>
+      <p class="text-white/70 text-sm leading-relaxed max-w-xs">
+        Tech designed to connect, not deflect. Rooted in the Connecticut community.
+      </p>
+    </div>
+
+    <div>
+      <div class="font-semibold text-sm uppercase tracking-wide text-white/50 mb-4">Contact</div>
+      <ul class="space-y-3 text-sm text-white/80">
+        <li><a href="tel:+18607182234" class="hover:text-[var(--gold)] transition-colors">(860)718-2234</a></li>
+        <li><a href="mailto:hello@mapventures.com" class="hover:text-[var(--gold)] transition-colors">hello@mapventures.com</a></li>
+        <li>Connecticut, USA</li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="font-semibold text-sm uppercase tracking-wide text-white/50 mb-4">Pages</div>
+      <ul class="space-y-3 text-sm text-white/80">
+        <li><a href="index.html" class="hover:text-[var(--gold)] transition-colors">Home</a></li>
+        <li><a href="index.html#services" class="hover:text-[var(--gold)] transition-colors">Services</a></li>
+        <li><a href="about.html" class="hover:text-[var(--gold)] transition-colors">About</a></li>
+        <li><a href="contact.html" class="hover:text-[var(--gold)] transition-colors">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-6 py-5 text-xs text-white/50 flex flex-col sm:flex-row justify-between gap-2">
+      <span>&copy; 2026 MAP Ventures. All rights reserved.</span>
+      <span>Connecticut, USA</span>
+    </div>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
